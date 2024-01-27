@@ -1,5 +1,11 @@
 package com.api.crud.repositories;
 
-public interface IUserRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.api.crud.models.UserModel;
+
+@Repository
+public interface IUserRepository extends JpaRepository<UserModel, Long>{
 
 }
